@@ -1,0 +1,36 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.bankes"
+    },
+    "jhipsterVersion": "5.4.2",
+    "applicationType": "monolith",
+    "baseName": "example_jhipster",
+    "packageName": "com.bankes",
+    "packageFolder": "com/bankes",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": true,
+    "websocket": "spring-websocket",
+    "databaseType": "sql",
+    "devDatabaseType": "h2Memory",
+    "prodDatabaseType": "mysql",
+    "searchEngine": "elasticsearch",
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "maven",
+    "enableSwaggerCodegen": true,
+    "jwtSecretKey": "Yjg2N2JkY2IwNTgxNDllYzU2MTMyZDE2MWFhYmM1YmNjZmVmYWY5NmMwNjlmM2UwOGU3NWNkZTc0MjY2ZDM1ZDc0YmRjZWYyMDg5NDhiN2QxYzVlMjlhMmE0Y2RiZTFkZDBkMDFjNTMxNzE2ZjE2M2VhNmMyYjFkMWU0NTdkNTU=",
+    "clientFramework": "angularX",
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "testFrameworks": [
+      "gatling",
+      "cucumber",
+      "protractor"
+    ],
+    "jhiPrefix": "jhi",
+    "enableTranslation": false
+  }
+}
