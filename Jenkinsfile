@@ -6,6 +6,7 @@ pipeline {
             agent {
                 docker {
                     image 'maven:3.5.4-jdk-8-alpine'
+                    args '-v -v maven-repo:/root/.m2'
                 }
             }
             steps {
