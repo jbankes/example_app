@@ -13,6 +13,13 @@
     </repositories>
 
     <!-- jhipster-needle-distribution-management -->
+    <pluginRepositories>
+        <pluginRepository>
+            <id>smartbear-sweden-plugin-repository</id>
+            <url>http://www.soapui.org/repository/maven2/</url>
+        </pluginRepository>
+    </pluginRepositories>
+
 
     <properties>
         <!-- Build properties -->
@@ -403,7 +410,19 @@
                 <directory>src/test/features</directory>
             </testResource>
         </testResources>
+
         <plugins>
+            <plugin>
+                <groupId>com.smartbear.soapui</groupId>
+                <artifactId>soapui-maven-plugin</artifactId>
+                <version>5.4.0</version>
+                <configuration>
+                    <projectFile>simple-test-soapui-project.xml</projectFile>
+                    <projectProperties>
+                        <value>message=Hello World!</value>
+                    </projectProperties>
+                </configuration>
+            </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
