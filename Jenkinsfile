@@ -1,12 +1,12 @@
 pipeline {
-    agent none
+    agent any
 
     stages {
         stage('Build') {
             agent {
                 docker {
                     image 'maven:3.5.4-jdk-8-alpine'
-                    args '--mount \'type=bind,src=/var/lib/jenkins/maven_repo,dst=/root/.m2\''
+                    args '--mount \'type=bind,src=/var/lib/jenkins/maven_repo,dst=/root/.m2/repository\''
                 }
             }
             steps {
@@ -17,7 +17,7 @@ pipeline {
             agent {
                 docker {
                     image 'maven:3.5.4-jdk-8-alpine'
-                    args '--mount \'type=bind,src=/var/lib/jenkins/maven_repo,dst=/root/.m2\''
+                    args '--mount \'type=bind,src=/var/lib/jenkins/maven_repo,dst=/root/.m2/repository\''
                 }
             }
             steps {
