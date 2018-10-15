@@ -417,7 +417,7 @@
                 <artifactId>soapui-maven-plugin</artifactId>
                 <version>5.4.0</version>
                 <configuration>
-                    <projectFile>./soap_ui_projects/soapui-project.xml</projectFile>
+                    <projectFile>soap_ui_projects/soapui-project.xml</projectFile>
                 </configuration>
             </plugin>
             <plugin>
