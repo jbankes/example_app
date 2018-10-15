@@ -417,10 +417,7 @@
                 <artifactId>soapui-maven-plugin</artifactId>
                 <version>5.4.0</version>
                 <configuration>
-                    <projectFile>simple-test-soapui-project.xml</projectFile>
-                    <projectProperties>
-                        <value>message=Hello World!</value>
-                    </projectProperties>
+                    <projectFile>soap_ui_projects/soapui-project.xml</projectFile>
                 </configuration>
             </plugin>
             <plugin>
