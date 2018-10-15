@@ -1,20 +1,21 @@
 pipeline {
-    agent any
+    agent none
 
     stages {
         stage('Build') {
+            agent {
+                docker {
+                    image 'maven:3.5.4-jdk-8-alpine'
+                    args '-v maven_repo:/root/.m2'
+                }
+            }
             steps {
                 sh 'mvn clean install'
             }
         }
         stage('Test') {
             steps {
-                echo 'Testing..'
-            }
-        }
-        stage('Deploy') {
-            steps {
-                echo 'Deploying....'
+                echo 'SoapUI will go here'
             }
         }
     }
