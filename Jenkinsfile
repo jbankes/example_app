@@ -21,7 +21,7 @@ pipeline {
                 }
             }
             steps {
-                sh 'mvn com.smartbear.soapui:soapui-maven-plugin:5.4.0:test'
+                sh 'mvn clean test'
             }
         }
     }
