@@ -21,7 +21,7 @@ pipeline {
                 }
             }
             steps {
-                sh 'mvn clean test'
+                sh 'cd soap-runner && mvn clean test'
             }
         }
     }
