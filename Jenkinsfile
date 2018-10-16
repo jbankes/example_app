@@ -3,13 +3,10 @@ pipeline {
 
     stages {
         stage('Build') {
-            when {
-                branch 'master'
-            }
             agent {
                 docker {
                     image 'maven:3.5.4-jdk-8-alpine'
-                    args '-v maven-repo=/root/.m2'
+                    args '-v maven-repo:/root/.m2'
                 }
             }
             steps {
@@ -20,11 +17,11 @@ pipeline {
             agent {
                 docker {
                     image 'maven:3.5.4-jdk-8-alpine'
-                    args '-v maven-repo=/root/.m2'
+                    args '-v maven-repo:/root/.m2'
                 }
             }
             steps {
-                sh 'mvn com.smartbear.soapui:soapui-maven-plugin:5.4.0:test'
+                sh 'mvn clean test'
             }
         }
     }
