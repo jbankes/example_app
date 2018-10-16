@@ -13,15 +13,6 @@
         <!-- jhipster-needle-maven-repository -->
     </repositories>
 
-    <!-- jhipster-needle-distribution-management -->
-    <pluginRepositories>
-        <pluginRepository>
-            <id>smartbear-sweden-plugin-repository</id>
-            <url>http://www.soapui.org/repository/maven2/</url>
-        </pluginRepository>
-    </pluginRepositories>
-
-
     <properties>
         <!-- Build properties -->
         <maven.version>3.0.0</maven.version>
@@ -423,41 +414,6 @@
         </testResources>
 
         <plugins>
-
-            <plugin>
-                <groupId>com.smartbear.soapui</groupId>
-                <artifactId>soapui-maven-plugin</artifactId>
-                <version>5.4.0</version>
-                <executions>
-                    <execution>
-                        <id>soapUI1</id>
-                        <phase>test</phase>
-                        <goals>
-                            <goal>test</goal>
-                        </goals>
-                        <configuration>
-                            <projectFile>soap_ui_projects/soapui-project.xml</projectFile>
-                        </configuration>
-                    </execution>
-                    <execution>
-                        <id>soapUI2</id>
-                        <phase>test</phase>
-                        <goals>
-                            <goal>test</goal>
-                        </goals>
-                        <configuration>
-                            <projectFile>soap_ui_projects/soapui-project-no-tests.xml</projectFile>
-                        </configuration>
-                    </execution>
-                </executions>
-                <dependencies>
-                    <dependency>
-                        <groupId>com.jgoodies</groupId>
-                        <artifactId>jgoodies-forms</artifactId>
-                        <version>1.9.0</version>
-                    </dependency>
-                </dependencies>
-            </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
