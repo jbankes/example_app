@@ -1,7 +1,7 @@
 Status: FAILED
-Time Taken: 790
-Size: 27606
-Timestamp: Tue Oct 16 15:22:34 EDT 2018
+Time Taken: 980
+Size: 27520
+Timestamp: Wed Oct 17 13:48:46 EDT 2018
 TestStep: Typicode
 
 ----------------- Messages ------------------------------
@@ -30,20 +30,20 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 ---------------- Response --------------------------
 Transfer-Encoding: [chunked]
 Server: [cloudflare]
-CF-RAY: [46ace51f4a542aaf-SEA]
+CF-RAY: [46b4991e6b3c6cb8-SJC]
 X-Content-Type-Options: [nosniff]
 Connection: [keep-alive]
 Pragma: [no-cache]
-Date: [Tue, 16 Oct 2018 19:22:34 GMT]
+Date: [Wed, 17 Oct 2018 17:48:47 GMT]
 Via: [1.1 vegur]
 CF-Cache-Status: [HIT]
 Cache-Control: [public, max-age=14400]
-Etag: [W/"6bd6-SnEvhCU9hojabjXLUXZCcpgg/Rs"]
+Etag: [W/"6b80-Ybsq/K6GwwqrYkAsFxqDXGC7DoM"]
 Access-Control-Allow-Credentials: [true]
 Content-Encoding: [gzip]
-Set-Cookie: [__cfduid=d3b045ab9807775750b6fab0f24de46711539717754; expires=Wed, 16-Oct-19 19:22:34 GMT; path=/; domain=.typicode.com; HttpOnly]
+Set-Cookie: [__cfduid=de0fac7ae9ee109f998017c0d4f5dc4261539798527; expires=Thu, 17-Oct-19 17:48:47 GMT; path=/; domain=.typicode.com; HttpOnly]
 Vary: [Origin, Accept-Encoding]
-Expires: [Tue, 16 Oct 2018 23:22:34 GMT]
+Expires: [Wed, 17 Oct 2018 21:48:47 GMT]
 #status#: [HTTP/1.1 200 OK]
 Content-Type: [application/json; charset=utf-8]
 X-Powered-By: [Express]
@@ -649,11 +649,5 @@ Expect-CT: [max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cg
     "id": 100,
     "title": "at nam consequatur ea labore ea harum",
     "body": "cupiditate quo est a modi nesciunt soluta\nipsa voluptas error itaque dicta in\nautem qui minus magnam et distinctio eum\naccusamus ratione error aut"
-  },
-  {
-    "title": "statup",
-    "body": "bar",
-    "userId": 19999,
-    "id": 101
   }
 ]

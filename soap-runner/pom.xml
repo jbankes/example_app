@@ -75,23 +75,14 @@
         <version>5.4.0</version>
         <executions>
           <execution>
-            <id>soapUI1</id>
+            <id>soapUI-${projectFile}</id>
             <phase>test</phase>
             <goals>
               <goal>test</goal>
             </goals>
             <configuration>
-              <projectFile>soap_ui_projects/soapui-project.xml</projectFile>
-            </configuration>
-          </execution>
-          <execution>
-            <id>soapUI2</id>
-            <phase>test</phase>
-            <goals>
-              <goal>test</goal>
-            </goals>
-            <configuration>
-              <projectFile>soap_ui_projects/soapui-project-no-tests.xml</projectFile>
+              <projectFile>soap_ui_projects/${projectFile}</projectFile>
+              <testSuite>${testSuite}</testSuite>
             </configuration>
           </execution>
         </executions>

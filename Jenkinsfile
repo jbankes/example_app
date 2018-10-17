@@ -21,7 +21,7 @@ pipeline {
                 }
             }
             steps {
-                sh 'cd soap-runner && mvn clean test'
+                sh 'cd soap-runner && mvn clean test -DprojectFile=soapui-project.xml'
             }
         }
     }
